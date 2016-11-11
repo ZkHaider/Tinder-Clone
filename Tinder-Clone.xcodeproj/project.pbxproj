@@ -12,6 +12,10 @@
 		4BBEBE991DD56D510010A6EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BBEBE971DD56D510010A6EA /* Main.storyboard */; };
 		4BBEBE9B1DD56D510010A6EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BBEBE9A1DD56D510010A6EA /* Assets.xcassets */; };
 		4BBEBE9E1DD56D510010A6EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BBEBE9C1DD56D510010A6EA /* LaunchScreen.storyboard */; };
+		4BBEBEA71DD56D720010A6EA /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBEBEA61DD56D720010A6EA /* StackViewController.swift */; };
+		4BBEBEAC1DD56E3B0010A6EA /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBEBEAB1DD56E3B0010A6EA /* DraggableView.swift */; };
+		4BBEBEB11DD57E770010A6EA /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBEBEB01DD57E770010A6EA /* Int.swift */; };
+		4BBEBEB31DD57EB50010A6EA /* FloatingPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBEBEB21DD57EB50010A6EA /* FloatingPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		4BBEBE9A1DD56D510010A6EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BBEBE9D1DD56D510010A6EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BBEBE9F1DD56D510010A6EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BBEBEA61DD56D720010A6EA /* StackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
+		4BBEBEAB1DD56E3B0010A6EA /* DraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
+		4BBEBEB01DD57E770010A6EA /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		4BBEBEB21DD57EB50010A6EA /* FloatingPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		4BBEBE921DD56D510010A6EA /* Tinder-Clone */ = {
 			isa = PBXGroup;
 			children = (
+				4BBEBEAF1DD57E6C0010A6EA /* Extensions */,
+				4BBEBEA81DD56DC80010A6EA /* Custom */,
+				4BBEBEA51DD56D5B0010A6EA /* ViewControllers */,
 				4BBEBE931DD56D510010A6EA /* AppDelegate.swift */,
-				4BBEBE951DD56D510010A6EA /* ViewController.swift */,
 				4BBEBE971DD56D510010A6EA /* Main.storyboard */,
 				4BBEBE9A1DD56D510010A6EA /* Assets.xcassets */,
 				4BBEBE9C1DD56D510010A6EA /* LaunchScreen.storyboard */,
 				4BBEBE9F1DD56D510010A6EA /* Info.plist */,
 			);
 			path = "Tinder-Clone";
+			sourceTree = "<group>";
+		};
+		4BBEBEA51DD56D5B0010A6EA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BBEBE951DD56D510010A6EA /* ViewController.swift */,
+				4BBEBEA61DD56D720010A6EA /* StackViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4BBEBEA81DD56DC80010A6EA /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				4BBEBEAB1DD56E3B0010A6EA /* DraggableView.swift */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		4BBEBEAF1DD57E6C0010A6EA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4BBEBEB01DD57E770010A6EA /* Int.swift */,
+				4BBEBEB21DD57EB50010A6EA /* FloatingPoint.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +132,7 @@
 				TargetAttributes = {
 					4BBEBE8F1DD56D500010A6EA = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = EVL2DEPTTR;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,7 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BBEBEB31DD57EB50010A6EA /* FloatingPoint.swift in Sources */,
+				4BBEBEA71DD56D720010A6EA /* StackViewController.swift in Sources */,
 				4BBEBE961DD56D510010A6EA /* ViewController.swift in Sources */,
+				4BBEBEB11DD57E770010A6EA /* Int.swift in Sources */,
+				4BBEBEAC1DD56E3B0010A6EA /* DraggableView.swift in Sources */,
 				4BBEBE941DD56D510010A6EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EVL2DEPTTR;
 				INFOPLIST_FILE = "Tinder-Clone/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zkhaider.Tinder-Clone";
@@ -270,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EVL2DEPTTR;
 				INFOPLIST_FILE = "Tinder-Clone/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zkhaider.Tinder-Clone";
@@ -297,6 +340,7 @@
 				4BBEBEA41DD56D510010A6EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
