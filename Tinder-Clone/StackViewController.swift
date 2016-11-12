@@ -157,7 +157,8 @@ extension StackViewController: DraggableDelegate {
                 
             }, completion: nil)
             
-            let scaleValue = self.rescale(domain1: self.centerX!, domain2: self.screenWidth, range1: 0.98, range2: 1.0, value: value)
+            let adjustedValue = self.centerX! + (translationX < 0.0 ? translationX * -1 : translationX)
+            let scaleValue = self.rescale(domain1: self.centerX!, domain2: self.screenWidth, range1: 0.98, range2: 1.0, value: adjustedValue)
             let absScale = (scaleValue < 0.0) ? scaleValue * -1 : scaleValue
             
             UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveEaseOut, animations: {
